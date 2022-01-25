@@ -3,7 +3,7 @@
 ### Récupérer le projer
 
 ```
-$ git clone https://gitlab.com/edrichard/e-commerce.git
+$ gh repo clone Florianeizd/e-commerce
 ```
 
 ### Installation des containers 
