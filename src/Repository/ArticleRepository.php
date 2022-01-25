@@ -4,7 +4,10 @@ namespace App\Repository;
 
 use App\Entity\Article;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+<<<<<<< HEAD
 use Doctrine\ORM\Query;
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -20,12 +23,15 @@ class ArticleRepository extends ServiceEntityRepository
         parent::__construct($registry, Article::class);
     }
 
+<<<<<<< HEAD
     public function getArticleQuery(): Query
     {
         return $this->createQueryBuilder('a')
             ->getQuery();
     }
 
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     // /**
     //  * @return Article[] Returns an array of Article objects
     //  */

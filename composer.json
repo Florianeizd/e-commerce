@@ -4,7 +4,11 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
+<<<<<<< HEAD
         "php": ">=8.0",
+=======
+        "php": ">=7.2.5",
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
         "ext-ctype": "*",
         "ext-iconv": "*",
         "composer/package-versions-deprecated": "1.11.99.4",
@@ -12,17 +16,25 @@
         "doctrine/doctrine-bundle": "^2.5",
         "doctrine/doctrine-migrations-bundle": "^3.2",
         "doctrine/orm": "^2.10",
+<<<<<<< HEAD
         "knplabs/knp-paginator-bundle": "^5.8",
         "liip/imagine-bundle": "^2.7",
         "phpdocumentor/reflection-docblock": "^5.3",
         "sensio/framework-extra-bundle": "^6.1",
         "stripe/stripe-php": "^7.110",
+=======
+        "phpdocumentor/reflection-docblock": "^5.3",
+        "sensio/framework-extra-bundle": "^6.1",
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
         "symfony/asset": "5.3.*",
         "symfony/console": "5.3.*",
         "symfony/dotenv": "5.3.*",
         "symfony/expression-language": "5.3.*",
+<<<<<<< HEAD
         "symfony/filesystem": "5.3.*",
         "symfony/finder": "5.3.*",
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
         "symfony/flex": "^1.3.1",
         "symfony/form": "5.3.*",
         "symfony/framework-bundle": "5.3.*",
@@ -67,12 +79,16 @@
         "preferred-install": {
             "*": "dist"
         },
+<<<<<<< HEAD
         "sort-packages": true,
         "allow-plugins": {
             "composer/package-versions-deprecated": true,
             "symfony/flex": true,
             "symfony/runtime": true
         }
+=======
+        "sort-packages": true
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     },
     "autoload": {
         "psr-4": {

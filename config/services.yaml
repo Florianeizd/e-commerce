@@ -4,6 +4,7 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
+<<<<<<< HEAD
     endpoint.imaginary: '%env(resolve:ENDPOINT_IMAGINARY)%'
     path.images.article: 'images/articles/'
     stripe.api.secretkey: '%env(STRIPE_SECRET_KEY)%' 
@@ -11,17 +12,23 @@ parameters:
     stripe.currency: 'eur'
     stripe.mode: 'payment'
     
+=======
+    path.images.article: 'images/articles/'
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
 
 services:
     # default configuration for services in *this* file
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+<<<<<<< HEAD
         bind:
             $imaginaryUrl: '%endpoint.imaginary%'
             $stripeApiSecretKey: '%stripe.api.secretkey%'
             $stripeCurrency: '%stripe.currency%'
             $stripeMode: '%stripe.mode%'
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
 
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name
@@ -39,3 +46,7 @@ services:
     App\Service\FileUploadService:
         arguments:
             $pathImageArticle: '%path.images.article%'
+<<<<<<< HEAD
+=======
+
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034

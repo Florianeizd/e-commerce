@@ -5,7 +5,10 @@
         "@symfony/webpack-encore": "^1.0.0",
         "core-js": "^3.0.0",
         "file-loader": "6.0.0",
+<<<<<<< HEAD
         "jquery": "^3.6.0",
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
         "regenerator-runtime": "^0.13.2",
         "sass": "^1.44.0",
         "sass-loader": "12.0.0",

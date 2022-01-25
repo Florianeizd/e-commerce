@@ -34,8 +34,13 @@ class RegistrationController extends AbstractController
     #[Route('/register', name: 'app_register')]
     public function register(Request $request, UserPasswordHasherInterface $userPasswordHasher, UserAuthenticatorInterface $userAuthenticator, AppCustomAuthenticator $authenticator, EntityManagerInterface $entityManager): Response
     {
+<<<<<<< HEAD
         $user = new User(); //le champ auquel le form est relier donc user ici
         $form = $this->createForm(RegistrationFormType::class, $user); //Instancier le formulaire et on relie les champs du form au champ de l'utilisateur
+=======
+        $user = new User();
+        $form = $this->createForm(RegistrationFormType::class, $user);
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
@@ -63,8 +68,13 @@ class RegistrationController extends AbstractController
             
         }
 
+<<<<<<< HEAD
         return $this->render('registration/register.html.twig', [ //afficher le fichier ()
             'registrationForm' => $form->createView(),  //variable qui creer la vue
+=======
+        return $this->render('registration/register.html.twig', [
+            'registrationForm' => $form->createView(),
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
         ]);
     }
 

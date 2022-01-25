@@ -3,8 +3,11 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+<<<<<<< HEAD
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
@@ -16,8 +19,11 @@ use Symfony\Component\Security\Core\User\UserInterface;
  */
 class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
+<<<<<<< HEAD
     public const ROLE_ADMIN = 'ROLE_ADMIN';
     
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
@@ -46,6 +52,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     private $isVerified = false;
 
+<<<<<<< HEAD
     /**
      * @ORM\OneToMany(targetEntity=Order::class, mappedBy="user")
      */
@@ -59,23 +66,31 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     /**
      * @return int|null
      */
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     public function getId(): ?int
     {
         return $this->id;
     }
 
+<<<<<<< HEAD
     /**
      * @return string|null
      */
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     public function getEmail(): ?string
     {
         return $this->email;
     }
 
+<<<<<<< HEAD
     /**
      * @param string $email
      * @return $this
      */
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     public function setEmail(string $email): self
     {
         $this->email = $email;
@@ -113,10 +128,13 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return array_unique($roles);
     }
 
+<<<<<<< HEAD
     /**
      * @param array $roles
      * @return $this
      */
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     public function setRoles(array $roles): self
     {
         $this->roles = $roles;
@@ -132,10 +150,13 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this->password;
     }
 
+<<<<<<< HEAD
     /**
      * @param string $password
      * @return $this
      */
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     public function setPassword(string $password): self
     {
         $this->password = $password;
@@ -163,24 +184,31 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         // $this->plainPassword = null;
     }
 
+<<<<<<< HEAD
     /**
      * @return bool
      */
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     public function isVerified(): bool
     {
         return $this->isVerified;
     }
 
+<<<<<<< HEAD
     /**
      * @param bool $isVerified
      * @return $this
      */
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     public function setIsVerified(bool $isVerified): self
     {
         $this->isVerified = $isVerified;
 
         return $this;
     }
+<<<<<<< HEAD
 
     /**
      * @return Collection|Order[]
@@ -211,4 +239,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
         return $this;
     }
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
 }

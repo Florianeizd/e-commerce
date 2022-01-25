@@ -4,7 +4,10 @@ twig:
 
     globals:
        pathImageArticles: '%path.images.article%'
+<<<<<<< HEAD
        stripe_api_pk: '%stripe.api.pk%' 
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
 
 when@test:
     twig:

@@ -16,6 +16,7 @@
 
     <h1 class="h3 mb-3 font-weight-normal">Connexion</h1>
     <label for="inputEmail">Email</label>
+<<<<<<< HEAD
     <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" 
     autocomplete="email" required autofocus>
     <label for="inputPassword">Mot de passe</label>
@@ -23,6 +24,15 @@
     autocomplete="current-password" required>
 
     <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+=======
+    <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+    <label for="inputPassword">Mot de passe</label>
+    <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+
+    <input type="hidden" name="_csrf_token"
+           value="{{ csrf_token('authenticate') }}"
+    >
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
 
     {#
         Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.

@@ -2,14 +2,18 @@
 
 namespace App\Service;
 
+<<<<<<< HEAD
 use App\Entity\Attachment;
 use Doctrine\ORM\EntityManagerInterface;
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
 use Symfony\Component\HttpFoundation\File\Exception\FileException;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\String\Slugger\SluggerInterface;
 
 class FileUploadService implements FileUploadServiceInterface
 {
+<<<<<<< HEAD
     private string $pathImageArticle;
     private SluggerInterface $slugger;
     private EntityManagerInterface $entityManager;
@@ -56,10 +60,37 @@ class FileUploadService implements FileUploadServiceInterface
     /**
      * @return string
      */
+=======
+    private $pathImageArticle;
+    private $slugger;
+
+    public function __construct($pathImageArticle, SluggerInterface $slugger)
+    {
+        $this->pathImageArticle = $pathImageArticle;
+        $this->slugger = $slugger;
+    }
+
+    public function upload(UploadedFile $file): string
+    {
+        $originalFilename = pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME);
+        $safeFilename = $this->slugger->slug($originalFilename);
+        $filename = $safeFilename.'-'.uniqid().'.'.$file->guessExtension();
+
+        try {
+            $file->move($this->getPathImageArticle(), $filename);
+        } catch (FileException $e) {
+            throw new \Exception('Error upload file' . $e->getTraceAsString());
+        }
+
+        return $filename;
+    }
+
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     private function getPathImageArticle(): string
     {
         return $this->pathImageArticle;
     }
+<<<<<<< HEAD
 
     /**
      * @param string $filename
@@ -70,3 +101,6 @@ class FileUploadService implements FileUploadServiceInterface
         return filesize($this->pathImageArticle .'/'. $filename);
     }
 }
+=======
+}
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034

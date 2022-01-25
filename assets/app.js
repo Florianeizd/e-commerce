@@ -8,6 +8,7 @@
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.scss';
 
+<<<<<<< HEAD
 const $ = require('jquery');
 global.$ = global.jQuery = $;
 
@@ -72,3 +73,30 @@ function registerAttachmentsForm() {
         });
     });
 }
+=======
+import '@popperjs/core';
+import 'bootstrap';
+
+// start the Stimulus application
+import './bootstrap';
+
+
+const btnAddImageArticle = document.querySelector('button.add-item-image-article');
+btnAddImageArticle.addEventListener('click', function (e) {
+    const collectionHolder = document.querySelector('.' + e.currentTarget.dataset.collectionHolderClass);
+    const item = document.createElement('li');
+    
+    item.innerHTML = collectionHolder
+        .dataset
+        .prototype
+        .replace(
+        /__name__/g,
+        collectionHolder.dataset.index
+        );
+    
+    collectionHolder.appendChild(item);
+    
+    collectionHolder.dataset.index++;
+})
+
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034

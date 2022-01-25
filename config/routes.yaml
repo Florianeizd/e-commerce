@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 _liip_imagine:
     resource: "@LiipImagineBundle/Resources/config/routing.yaml"
+=======
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034

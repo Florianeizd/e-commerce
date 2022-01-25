@@ -4,7 +4,10 @@ namespace App\Entity;
 
 use App\Repository\AvisRepository;
 use Doctrine\ORM\Mapping as ORM;
+<<<<<<< HEAD
 use App\Entity\Article;
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
 
 /**
  * @ORM\Entity(repositoryClass=AvisRepository::class)
@@ -39,6 +42,7 @@ class Avis
      */
     private $article;
 
+<<<<<<< HEAD
     /**
      * @ORM\Column(type="boolean")
      */
@@ -53,23 +57,31 @@ class Avis
     /**
      * @return int|null
      */
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     public function getId(): ?int
     {
         return $this->id;
     }
 
+<<<<<<< HEAD
     /**
      * @return string|null
      */
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     public function getAuteur(): ?string
     {
         return $this->auteur;
     }
 
+<<<<<<< HEAD
     /**
      * @param string $auteur
      * @return $this
      */
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     public function setAuteur(string $auteur): self
     {
         $this->auteur = $auteur;
@@ -77,18 +89,24 @@ class Avis
         return $this;
     }
 
+<<<<<<< HEAD
     /**
      * @return string|null
      */
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     public function getContenue(): ?string
     {
         return $this->contenue;
     }
 
+<<<<<<< HEAD
     /**
      * @param string $contenue
      * @return $this
      */
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     public function setContenue(string $contenue): self
     {
         $this->contenue = $contenue;
@@ -96,18 +114,24 @@ class Avis
         return $this;
     }
 
+<<<<<<< HEAD
     /**
      * @return \DateTimeImmutable|null
      */
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     public function getCreatedAt(): ?\DateTimeImmutable
     {
         return $this->createdAt;
     }
 
+<<<<<<< HEAD
     /**
      * @param \DateTimeImmutable $createdAt
      * @return $this
      */
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     public function setCreatedAt(\DateTimeImmutable $createdAt): self
     {
         $this->createdAt = $createdAt;
@@ -115,24 +139,31 @@ class Avis
         return $this;
     }
 
+<<<<<<< HEAD
     /**
      * @return Article|null
      */
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     public function getArticle(): ?Article
     {
         return $this->article;
     }
 
+<<<<<<< HEAD
     /**
      * @param Article|null $article
      * @return $this
      */
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
     public function setArticle(?Article $article): self
     {
         $this->article = $article;
 
         return $this;
     }
+<<<<<<< HEAD
 
      /**
      * @return bool
@@ -153,4 +184,6 @@ class Avis
         return $this;
     }
 
+=======
+>>>>>>> fe50d38f4974b3564decc53b7efdfa4275c5d034
 }
